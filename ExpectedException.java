@@ -1,0 +1,9 @@
+package com.yuurei.testframework;
+
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+
+@Retention(RetentionPolicy.RUNTIME)
+public @interface ExpectedException {
+    Class value();
+}
